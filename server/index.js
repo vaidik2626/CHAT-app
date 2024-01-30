@@ -31,6 +31,7 @@ const server = app.listen(process.env.PORT, () =>
 const io = socket(server, {
   cors: {
     origin: "https://real-chat-api-sand.vercel.app",
+    methods: ["POST","GET","PUT","DELETE"],
     credentials: true,
   },
 });
